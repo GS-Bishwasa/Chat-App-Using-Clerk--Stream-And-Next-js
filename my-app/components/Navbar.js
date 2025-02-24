@@ -3,8 +3,11 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { UserButton } from "@clerk/nextjs";
+import { useUser } from "@clerk/nextjs";
 
 const Navbar = () => {
+  const user = useUser()
+  console.log(user.user?.id)
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -18,10 +21,10 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 items-center">
           <NavLink href="/">Home</NavLink>
-          <NavLink href="/about">About</NavLink>
-          <NavLink href="/services">Services</NavLink>
+          <NavLink href="/forums">Forums</NavLink>
+          <NavLink href="/chat">UserChat</NavLink>
           <NavLink href="/contact">Contact</NavLink>
-          <NavLink href="#">
+          <NavLink className='flex justify-center items-center' href="#">
             <UserButton/>
           </NavLink>
         </div>
@@ -36,10 +39,10 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden flex flex-col items-center bg-gray-800 py-4 space-y-3">
           <NavLink href="/" onClick={() => setIsOpen(false)}>Home</NavLink>
-          <NavLink href="/about" onClick={() => setIsOpen(false)}>About</NavLink>
-          <NavLink href="/services" onClick={() => setIsOpen(false)}>Services</NavLink>
+          <NavLink href="/forums" onClick={() => setIsOpen(false)}>Forums</NavLink>
+          <NavLink href="/chat" onClick={() => setIsOpen(false)}>UserChat</NavLink>
           <NavLink href="/contact" onClick={() => setIsOpen(false)}>Contact</NavLink>
-          <NavLink href="#">
+          <NavLink className='flex justify-center items-center' href="#">
             <UserButton/>
           </NavLink>
         </div>

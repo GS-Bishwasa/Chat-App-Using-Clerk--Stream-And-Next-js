@@ -8,14 +8,16 @@ export default function Home() {
     <div className="bg-gradient-to-br from-gray-900 via-gray-800 to-black min-h-screen text-white">
       {/* Hero Section */}
       <section className="container mx-auto flex flex-col items-center justify-center text-center px-6 py-24">
-        <motion.h1 
-          className="text-5xl md:text-7xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500"
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          ∑ Chart: Visualize Data Like Never Before
-        </motion.h1>
+      <motion.h1 
+  className="text-5xl md:text-7xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500 pb-2"
+  initial={{ opacity: 0, y: -30 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1 }}
+>
+  ∑ Chat: Connect With The Homies
+</motion.h1>
+
+
 
         <motion.p 
           className="mt-6 text-lg text-gray-300 max-w-2xl"
@@ -23,7 +25,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          Transform raw numbers into stunning charts effortlessly. ∑ Chart makes data visualization intuitive and powerful.
+          Chat with more same minded people worldwide, ∑ Chat is Secure and reliable
         </motion.p>
 
         <motion.div 
