@@ -9,37 +9,37 @@ const topics = [
         text: "Python",
         img: "/python.png",
         desc: "Let’s discuss everything related to Python, from basics to advanced concepts.",
-        slug:"Python-Discussion"
+        slug: "Python-Discussion"
     },
     {
         text: "JavaScript",
         img: "/js.png",
         desc: "Talk about JavaScript, frameworks, and libraries like React, Vue, and Angular.",
-        slug:"Javascript-Discussion"
+        slug: "Javascript-Discussion"
     },
     {
         text: "C++",
         img: "/cpp.png",
         desc: "A place to discuss C++ programming, algorithms, and competitive coding.",
-        slug:"CPP-Discussion"
+        slug: "CPP-Discussion"
     },
     {
         text: "Java",
         img: "/java.png",
         desc: "Explore Java programming, Spring Boot, and Android development.",
-        slug:"Java-Discussion"
+        slug: "Java-Discussion"
     },
     {
         text: "Django",
         img: "/django.png",
         desc: "Everything about Django, from models to REST APIs and authentication.",
-        slug:"Django-Discussion"
+        slug: "Django-Discussion"
     },
     {
         text: "React",
         img: "/react.png",
         desc: "A discussion hub for React, Next.js, and component-based UI development.",
-        slug:"React-Discussion"
+        slug: "React-Discussion"
     },
 ];
 
@@ -49,10 +49,10 @@ const Page = () => {
             <div className="container mx-auto px-6">
                 {/* Animated Heading */}
                 <motion.h1
-                    className="my-10 text-4xl font-extrabold text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500 p-4 rounded-lg shadow-lg"
-                    initial={{ opacity: 0, y: -20 }}
+                    className="my-10 text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500 p-4 rounded-lg shadow-lg"
+                    initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1 }}
+                    transition={{ duration: 1.2, ease: "easeInOut", delay: 0.2 }}
                 >
                     Discuss Forums
                 </motion.h1>
@@ -85,10 +85,10 @@ const Page = () => {
 
                                 {/* Discuss Now Button */}
                                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                                <Link href={`/forum/${topic.slug}`}>
-                                    <Button className="mt-4 px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition-all duration-300">
-                                        Discuss Now
-                                    </Button>
+                                    <Link href={`/forum/${topic.slug}`}>
+                                        <Button className="mt-4 px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg transition-all duration-300">
+                                            Discuss Now
+                                        </Button>
                                     </Link>
                                 </motion.div>
                             </motion.div>

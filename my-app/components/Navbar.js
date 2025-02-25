@@ -3,11 +3,11 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { UserButton } from "@clerk/nextjs";
-import { useUser } from "@clerk/nextjs";
+// import { useUser } from "@clerk/nextjs";
 
 const Navbar = () => {
-  const user = useUser()
-  console.log(user.user?.id)
+  // const user = useUser()
+  // console.log(user.user?.id)
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -23,7 +23,7 @@ const Navbar = () => {
           <NavLink href="/">Home</NavLink>
           <NavLink href="/forums">Forums</NavLink>
           <NavLink href="/chat">UserChat</NavLink>
-          <NavLink href="/contact">Contact</NavLink>
+          <NavLink href="/about">About</NavLink>
           <NavLink className='flex justify-center items-center' href="#">
             <UserButton/>
           </NavLink>
@@ -41,7 +41,7 @@ const Navbar = () => {
           <NavLink href="/" onClick={() => setIsOpen(false)}>Home</NavLink>
           <NavLink href="/forums" onClick={() => setIsOpen(false)}>Forums</NavLink>
           <NavLink href="/chat" onClick={() => setIsOpen(false)}>UserChat</NavLink>
-          <NavLink href="/contact" onClick={() => setIsOpen(false)}>Contact</NavLink>
+          <NavLink href="/about" onClick={() => setIsOpen(false)}>About</NavLink>
           <NavLink className='flex justify-center items-center' href="#">
             <UserButton/>
           </NavLink>
