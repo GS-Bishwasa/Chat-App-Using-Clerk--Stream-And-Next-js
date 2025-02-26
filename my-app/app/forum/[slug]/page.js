@@ -1,4 +1,4 @@
-import Chatforum from '@/components/ChatForum';
+import ChatForum from '@/components/ChatForum'
 import { currentUser } from '@clerk/nextjs/server'
 
 export default async function Page({ params }) {
@@ -6,5 +6,5 @@ export default async function Page({ params }) {
     console.log(user)
     const slug = (await params).slug
 
-   return <Chatforum slug={slug} clerkUser={{id:user.id,name:user.firstName,token:user.publicMetadata.token}}/>
+   return <ChatForum slug={slug} clerkUser={{id:user.id,name:user.firstName,token:user.publicMetadata.token}}/>
   }
