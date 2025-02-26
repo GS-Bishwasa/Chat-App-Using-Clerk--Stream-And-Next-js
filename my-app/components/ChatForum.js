@@ -32,10 +32,12 @@ const ChatForum = ({clerkUser,slug}) => {
     const channel = client.channel('messaging', slug, {
       image: 'https://getstream.io/random_png/?name=react',
       name: slug,
-      members: [userId],
+      // members: [userId],
     });
 
     setChannel(channel);
+// channel.addMembers([userId])
+
   }, [client]);
 
   if (!client) return <div>Setting up client & connection...</div>;

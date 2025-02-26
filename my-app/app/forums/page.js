@@ -9,37 +9,37 @@ const topics = [
         text: "Python",
         img: "/python.png",
         desc: "Let’s discuss everything related to Python, from basics to advanced concepts.",
-        slug: "Python-Discussion"
+        slug: "Python-Discussion-New"
     },
     {
         text: "JavaScript",
         img: "/js.png",
         desc: "Talk about JavaScript, frameworks, and libraries like React, Vue, and Angular.",
-        slug: "Javascript-Discussion"
+        slug: "Javascript-Discussion-New"
     },
     {
         text: "C++",
         img: "/cpp.png",
         desc: "A place to discuss C++ programming, algorithms, and competitive coding.",
-        slug: "CPP-Discussion"
+        slug: "CPP-Discussion-New"
     },
     {
         text: "Java",
         img: "/java.png",
         desc: "Explore Java programming, Spring Boot, and Android development.",
-        slug: "Java-Discussion"
+        slug: "Java-Discussion-New"
     },
     {
         text: "Django",
         img: "/django.png",
         desc: "Everything about Django, from models to REST APIs and authentication.",
-        slug: "Django-Discussion"
+        slug: "Django-Discussion-New"
     },
     {
         text: "React",
         img: "/react.png",
         desc: "A discussion hub for React, Next.js, and component-based UI development.",
-        slug: "React-Discussion"
+        slug: "React-Discussion-New"
     },
 ];
 
